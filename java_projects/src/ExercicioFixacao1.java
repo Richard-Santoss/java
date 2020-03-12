@@ -1,24 +1,29 @@
+import java.util.Locale;
 
 public class ExercicioFixacao1 {
 
 	public static void main(String[] args) {
-		String produto1 = "Computador";
-		String produto2 = "Mesa";
+		String product1 = "Computer";
+		String product2 = "Office Desk";
 		
-		int idade = 38;
-		int codigo = 9258;
-		int genero = 'M';
+		byte age = 30;
+		int code = 5290;
+		char gender = 'F';
 		
-		double preco1 = 3550.90;
-		double preco2 = 235.85;
-		double medida = 2.5;
+		double price1 = 2100.0;
+		double price2 = 650.50;
+		double measure = 53.234567;
 		
-		System.out.println("Produtos:");
-		System.out.printf("%s, está custando R$ %.2f%n", produto1, preco1);
-		System.out.printf("%s, está custando R$ %.2f%n", produto2, preco2);
+		System.out.println("Products:");
+		System.out.printf("%s, which price is $ %.2f%n", product1, price1);
+		System.out.printf("%s, which price is $ %.2f%n", product2, price2);
 		System.out.println();
-		System.out.printf("Registo de %d anos atrás, código %d e do Genero: %n", idade, codigo, genero);
-
+		System.out.printf("Record: %d years old, code %d and gender: %c%n", age, code, gender);
+		System.out.println();
+		System.out.printf("Measure with eight decimal places: %.8f%n", measure);
+		System.out.printf("Rouded (three decimal places): %.3f%n", measure);
+		Locale.setDefault(Locale.US);
+		System.out.printf("US decimal point: %.3f%n", measure);
 	}
 
 }
